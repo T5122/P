@@ -1,0 +1,34 @@
+<style>
+.token-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#token-form {
+    width:80%;
+}
+</style>
+
+<div class="token-form-container">
+    <form id="token-form">
+        <!-- Token Creation Form -->
+        <label for="token-name">Token Name:</label>
+        <input type="text" id="token-name" name="token-name"><br><br>
+        <label for="token-symbol">Token Symbol:</label>
+        <input type="text" id="token-symbol" name="token-symbol"><br><br>
+        <label for="total-supply">Total Supply:</label>
+        <input type="number" id("total-supply") name("total-supply") min=0 max=1000000000 value=10000000><br><br>
+
+         <!-- Button to submit the form and create the token contract -->
+         <button id("create-token")>Create Token</button>
+
+         <!-- Button to launch the token on a launchpad platform -->
+         <button id("launch-token")>Launch Token</button>
+
+          <!-- Button to distribute tokens via an airdrop -->
+          <button id("airdrop-token")>Airdrop Token</button>
+
+           <!-- Button to trade tokens with other cryptocurrencies -->
+           <button id("swap-token")>Swap Token</button>
+      </form> 
+ </div>   
